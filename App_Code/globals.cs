@@ -33,7 +33,7 @@ public class Globals
         this.Firstname = "Mario";
         this.Lastname = "Rossi";
         this.Color = "black";
-        this.List = new List<string>(){"Qui","Quo","Qua"};
+
         this.Properties = new Properties()
             {
                text = "Welcome",

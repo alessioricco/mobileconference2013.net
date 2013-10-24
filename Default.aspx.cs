@@ -36,9 +36,7 @@ public partial class _Default : System.Web.UI.Page
         this.txProperty.Text = _json.Properties.p;
         this.txValue.Text = _json.Properties.v;
 
-        if (_json.List.Count > 0) this.txItem1.Text = _json.List[0];
-        if (_json.List.Count > 1) this.txItem2.Text = _json.List[1];
-        if (_json.List.Count > 2) this.txItem3.Text = _json.List[2];      
+
     }
 
     protected override void OnPreRender(EventArgs e)
@@ -52,9 +50,7 @@ public partial class _Default : System.Web.UI.Page
         _json.Lastname = this.txLastName.Text;
         _json.Color = this.txColor.Text;
         _json.List.Clear();
-        _json.List.Add(this.txItem1.Text);
-        _json.List.Add(this.txItem2.Text);
-        _json.List.Add(this.txItem3.Text);
+
         _json.Properties.text = this.txLabelText.Text;
         _json.Properties.color = this.txLabelColor.Text;
         _json.Properties.left = this.txLabelLeft.Text;

@@ -31,40 +31,9 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
                 <td>Color</td>
                 <td>
                     <asp:TextBox ID="txColor" runat="server"></asp:TextBox>
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>Item 1</td>
-                <td>
-                    <asp:TextBox ID="txItem1" runat="server"></asp:TextBox>
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>Item 2</td>
-                <td>
-                    <asp:TextBox ID="txItem2" runat="server"></asp:TextBox>
-                </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>Item 3</td>
-                <td>
-                    <asp:TextBox ID="txItem3" runat="server"></asp:TextBox>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -102,19 +71,14 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+                <td>property</td>
+                <td>value</td>
                 <td>&nbsp;</td>
             </tr>
             <tr>
-                <td>property</td>
                 <td>
                     <asp:TextBox ID="txProperty" runat="server"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>value</td>
                 <td>
                     <asp:TextBox ID="txValue" runat="server"></asp:TextBox>
                 </td>
