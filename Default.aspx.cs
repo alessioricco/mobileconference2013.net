@@ -33,6 +33,8 @@ public partial class _Default : System.Web.UI.Page
         this.txLabelLeft.Text = _json.Properties.left;
         this.txLabelTop.Text = _json.Properties.top;
 
+        this.txProperty.Text = _json.Properties.p;
+        this.txValue.Text = _json.Properties.v;
 
         if (_json.List.Count > 0) this.txItem1.Text = _json.List[0];
         if (_json.List.Count > 1) this.txItem2.Text = _json.List[1];
@@ -57,6 +59,9 @@ public partial class _Default : System.Web.UI.Page
         _json.Properties.color = this.txLabelColor.Text;
         _json.Properties.left = this.txLabelLeft.Text;
         _json.Properties.top = this.txLabelTop.Text;
+
+        _json.Properties.p = this.txProperty.Text;
+        _json.Properties.v = this.txValue.Text;
 
         Assign();
 

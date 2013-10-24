@@ -10,6 +10,10 @@ public class Properties
     public string top { get; set; }
     public string left { get; set; }
     public string color { get; set; }
+
+    public string p { get; set; }
+    public string v { get; set; }
+    public string fake { get; set; }
 }
 /// <summary>
 /// Summary description for globals
@@ -22,6 +26,8 @@ public class Globals
     public List<string> List { get; set; }
     public Properties Properties { get; set; }
 
+
+
     public Globals()
     {
         this.Firstname = "Mario";
@@ -33,7 +39,10 @@ public class Globals
                text = "Welcome",
                color = "blue",
                top = "",
-               left = ""
+               left = "",
+               p = "",
+               v = "",
+               fake = "fakevalue"
             };
     }
 

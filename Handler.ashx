@@ -15,6 +15,13 @@ public class Handler : IHttpHandler {
         var serializer = new JavaScriptSerializer();
         var jsonString = serializer.Serialize(json);
                 
+        // need to change a property (ugly code)
+        if (! string.IsNullOrEmpty(json.Properties.p))
+        { 
+            jsonString = jsonString.Replace("fakevalue", json.Properties.v);
+            jsonString = jsonString.Replace("fake", json.Properties.p);
+        }
+        
         context.Response.ContentType = "application/json";     
         context.Response.Write(jsonString);
         context.Response.Flush();
