@@ -13,10 +13,10 @@ public partial class _Default : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            _json.Firstname = "alessio";
-            _json.Lastname = "ricco";
-            _json.Color = "black";
-            _json.List = new List<string> {"alpha", "beta", "gamma"};
+           // _json.Firstname = "alessio";
+            //_json.Lastname = "ricco";
+            //_json.Color = "black";
+            //_json.List = new List<string> {"alpha", "beta", "gamma"};
             Assign();
         }
 
@@ -27,6 +27,12 @@ public partial class _Default : System.Web.UI.Page
         this.txFirstName.Text = _json.Firstname;
         this.txLastName.Text = _json.Lastname;
         this.txColor.Text = _json.Color;
+
+        this.txLabelText.Text = _json.Properties.text;
+        this.txLabelColor.Text = _json.Properties.color;
+        this.txLabelLeft.Text = _json.Properties.left;
+        this.txLabelTop.Text = _json.Properties.top;
+
 
         if (_json.List.Count > 0) this.txItem1.Text = _json.List[0];
         if (_json.List.Count > 1) this.txItem2.Text = _json.List[1];
@@ -47,6 +53,10 @@ public partial class _Default : System.Web.UI.Page
         _json.List.Add(this.txItem1.Text);
         _json.List.Add(this.txItem2.Text);
         _json.List.Add(this.txItem3.Text);
+        _json.Properties.text = this.txLabelText.Text;
+        _json.Properties.color = this.txLabelColor.Text;
+        _json.Properties.left = this.txLabelLeft.Text;
+        _json.Properties.top = this.txLabelTop.Text;
 
         Assign();
 

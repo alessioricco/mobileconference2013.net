@@ -69,6 +69,39 @@
                 <td>&nbsp;</td>
             </tr>
             <tr>
+                <td>text</td>
+                <td>
+                    <asp:TextBox ID="txLabelText" runat="server"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>top</td>
+                <td>
+                    <asp:TextBox ID="txLabelTop" runat="server"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>left</td>
+                <td>
+                    <asp:TextBox ID="txLabelLeft" runat="server"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>
+                    <asp:TextBox ID="txLabelColor" runat="server"></asp:TextBox>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
                 <td>&nbsp;</td>
                 <td>
                     <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Update" />
