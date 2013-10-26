@@ -23,7 +23,7 @@ public class Globals
     public string Firstname { get; set; }
     public string Lastname { get; set; }
     public string Color { get; set; }
-    public List<string> List { get; set; }
+
     public Properties Properties { get; set; }
 
 

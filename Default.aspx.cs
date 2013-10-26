@@ -49,7 +49,7 @@ public partial class _Default : System.Web.UI.Page
         _json.Firstname = this.txFirstName.Text;
         _json.Lastname = this.txLastName.Text;
         _json.Color = this.txColor.Text;
-        _json.List.Clear();
+        
 
         _json.Properties.text = this.txLabelText.Text;
         _json.Properties.color = this.txLabelColor.Text;
